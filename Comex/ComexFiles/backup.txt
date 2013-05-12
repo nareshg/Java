@@ -1,0 +1,30 @@
+/* PROGRAM TO FIND THE PRIME NUMBERS WITH IN A GIVEN RANGE OF NUMBERS */
+
+import java.lang.*;
+import java.io.*;
+class forpri1
+{
+public static void main(String args[])throws IOException
+{
+BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+System.out.print("Enter the Number:");
+int n=Integer.parseInt(br.readLine());
+int i,c=0,j;
+ System.out.println("Prime Numbers FROM 1 to "+n);
+for(i=1;i<=n;i++)
+{
+c=0;
+for(j=1;j<=i;j++)
+{
+if((i%j)==0)
+{
+c=c+1;
+}
+}
+if(c==2)
+{
+System.out.println(i);
+}
+}
+}
+}
